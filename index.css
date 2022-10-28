@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Poppins&display=swap');
+*{margin-top:0;
+padding:0;
+
+}
+body{
+           scroll-behavior: smooth;
+           background-color: #f2f3f7; 
+            
+}
+
+
+/*=========header styling start============ */
+
+header{
+    /* background-image: linear-gradient(120deg,rgb(59, 60, 126),white,rgb(13, 225, 253)); */
+    
+            background-color: white;
+            border-radius:5px;
+            width: 100%;
+            box-shadow: 0 0 2px 2px rgb(238, 237, 237);
+            height: 7em;
+            
+            color: black;
+            border: 1px solid black;
+}
+.logo{
+    /* border: 1px solid red; */
+                width: 20%;
+                height:150px;
+                display: flex;
+                flex-direction: row;
+                justify-self: flex-start;
+                filter: drop-shadow(0.20rem 0.20rem 0.10rem rgba(71, 71, 71, 0.3));
+
+
+}
+.logo>p{
+            /* border: 1px solid red; */
+            
+            
+            
+            color: black;
+            font-weight: 600;
+            font-size: 4vw;
+            line-height: 120px;
+            font-family: 'Comfortaa', cursive;;
+            
+
+}
+.logo>p>span{
+            font-weight: 200;
+    
+            font-size: 3.2vw;
+            
+}
+
+
+.logo>img{
+            width: 100%;
+            height: 100%;
+}
+
+
+.menu>ul{
+            display: flex;
+            flex-direction:row;
+            gap: 2em;
+            margin-left: 70%;
+            font-family:'Poppins', sans-serif;
+            margin-top:-100px;
+            color: rgb(68, 66, 66);
+            font-size: 1.5rem;
+}
+
+/* <============header styling ends==========> */
+
+
+/* <=================discover section starts here==================> */
+.img1{
+            width: 100%;
+            height: 700px;
+            margin: auto;
+}
+
+.img1{ 
+            width: 100%;
+            height: 700px;
+            background-image: 
+            /* top, transparent red */
+            linear-gradient(
+                rgba(2, 0, 7, 0.70), 
+                rgba(22, 6, 39, 0.9)
+            ),
+            /* your image */
+            url(./pics/svghello.svg);
+            background-size: 100% 100%;
+            text-align: center;
+}
+.img1>p{  
+              
+            font-size: 3rem;
+            font-weight: 600;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            position: relative;
+            top: 25%;
+            
+}
+
+.img1>p>span{
+            font-size: 1.9rem;
+            font-weight: 400;
+            font-family: 'Poppins', sans-serif;
+            margin-left: -38%;
+}
+
+.explore,.login{
+            width: 15%;
+            height: 60px;
+            font-size: 20px;
+            border-radius: 10px;
+            font-weight: 600;
+            transform: translateY(350%);
+            border-width: 2px 3px 5px 1px;
+            border-color:rgb(120, 49, 253) rgb(252, 154, 25) rgb(120, 49, 253) rgb(248, 174, 35);
+}
+
+
+.login:hover{
+
+            background: linear-gradient(330deg,  #5b0eeb  0%, #6d5dfc  50%, #8abdff 100%);
+
+            color: white;
+            border-width: 1px 0px 1px 0px;
+            border-color: white black white black;
+
+}
+ .explore:hover{
+
+            background: linear-gradient(330deg,  #5b0eeb  0%, #6d5dfc  50%, #8abdff 100%);
+            color: white;
+            border-width: 1px 0px 1px 0px;
+            border-color: white black white black;
+
+}
+
+/* <=================discover section ends here========================> */
+
+
+/* <========================search option styling starts=========================> */
+
+
+.search{
+            margin:5%  auto auto 20%;
+            height: 100px;
+            width: 80%;
+            /* border: 1px solid red; */
+            padding: auto auto auto 5%;
+
+     
+}
+
+#srchpic{
+          
+            width: 50%;
+            height: 80px;
+            border-radius: 15px;
+            border-width:0px 3px 2px 0px;
+            border-color:0 orange blue orchid;
+
+}
+
+input[type="text"]::placeholder{
+            text-align: center;
+            font-size: 1.5rem;
+            outline: none;
+            
+}
+
+input[type="text"]{
+            border-color:white orange blue orchid;
+            font-size: 2rem;
+            text-align: center;
+}
+
+input[type="text"]:focus{
+            border-bottom-width:4px;
+            border-right-width: 0px !important;
+            border-radius:0px !important;
+            outline: none !important;
+}
+
+.searbtn{
+         
+            width: 12.5rem;
+            height: 80px;
+            display: inline;
+            background: linear-gradient(330deg,  #da5a28  0%, #f17747  50%, #f7a98b 100%);
+            color: white;
+            border: none;
+            font-size: 1.6rem;
+            margin-top: 15px;
+            border-radius: 15px;
+  }
+  .searbtn:hover{
+            border:4px solid rgb(241, 149, 88) ;
+            outline: none;
+            background:white;
+            color: black;
+  }
+
+  .searbtn:active{
+           border: none;
+            outline: none;
+            background:rgb(7, 6, 8) ;
+            color: rgb(250, 248, 248);  
+            transform: scale(0.97); 
+             
+  }
+
+
+
+/* <====================search styling over===================================> */
+
+/* <======================gallery styling starts===========================> */
+
+.gallery{
+            width: 90%; 
+            margin: auto;
+            padding:60px 35px 35px 35px ;
+            border-radius: 40px;
+            background: #ecf0f3;
+            box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1), -6px -6px 10px white;
+            /* box-shadow: 13px 13px 20px #cbced1,
+                        -13px -13px 20px #ffffff;
+                             */
+}
+
+
+.load-more{
+            /* width: 250px;
+            height: 70px;
+            transform: translateX(280%);
+
+            margin:auto;
+            color: white;
+            font-size: 1.4rem;
+            background: linear-gradient(330deg,  #464442  0%, #424040  50%, #70706f 100%);
+            border-radius: 15px; */
+
+
+            display: inline-block;
+            border-radius: 15px;
+            margin-top:30px;
+            padding: 20px 50px;
+            background-color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: azure;
+            font-weight: 500;
+            cursor: pointer;
+            text-align: center;
+            transform: translateX(380%);
+}
+
+
+/* <======================gallery styling ends===========================> */
+
+/* <=================================types of arts styling starts====================> */
+.options{
+            width: 100%;
+            height: 400px;
+            border-radius: 930px 120px 980px 120px;
+            display: flex;
+            flex-direction: row;
+            gap: 8%;
+            justify-content: center;
+            margin-top: 10%;
+            flex-wrap: wrap;
+
+
+}
+
+.options>div{
+             width:200px ;
+             height:200px ;
+             box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1), -6px -6px 10px white;
+             border-radius: 50%;
+
+}
+
+.options>div>img{
+           width: 100px;
+           height: 100px;
+           margin-top:22%;
+           margin-left: 25%;
+           filter: drop-shadow(0.20rem 0.20rem 0.10rem rgba(71, 71, 71, 0.3));
+}
+
+
+
+.vectorcon,.imgcon,.illuscon,.videocon{
+             font-size:2rem;
+             text-align: center;
+             font-weight: 600;
+            font-size:1.9rem ;
+             margin-top:62px ;
+             letter-spacing: 0.2rem;
+             background: linear-gradient(
+                to right, #4d2717, #646368,
+                 #221708, #7a787c);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+             font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+/* <=================================types of arts styling ends====================> */
+
+/* <=================================Subscription plans starts====================> */
+
+.buymodel{ 
+            width: 90%; 
+            height:900px;
+            background-image:linear-gradient( rgba(32, 14, 14, 0.884),rgba(20, 18, 24, 0.4),rgba(13, 13, 51, 0.8)),url(./pics/vect.png) ;
+            background-size: 100% 100%;
+            margin:0px auto 0px auto;
+            /* clip-path:polygon(-11% -51%, 150% -1%, 150% -317%, 58% 310%); */
+            padding-top: 10%;
+            text-align: center;
+            box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1), -6px -6px 10px white;
+
+}
+
+.buymodel>.planparent>.plans{
+            font-weight: 600;
+            font-family:Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 3vw;
+            color: white;
+          
+}
+
+.buymodel>.planparent>span{
+            font-weight: 600;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+            font-size: 2vw;
+            color: white;
+}
+
+
+.buymodel>article{
+             
+              width: 90%;
+              height: 600px;
+              /* border: 1px solid white; */
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              gap: 1%;
+              margin: 4% auto;
+              color: white;
+}
+
+.buymodel>article>div{
+      
+              width: 32.49%;
+              /* background:#f7f7f8;
+              box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1), -2px -2px 6px white;
+              border-radius: 15px; */
+              height: 600px;
+              /* opacity: 0.9; */
+              background: rgba(255, 255, 255, 0.1);
+              backdrop-filter: blur(5px);
+              box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+              border: 1px solid rgba(255, 255, 255, 0.15);
+              border-radius: 15px;
+                              /* border: 1px solid yellow; */
+             
+         
+
+}
+
+
+
+.buynow{
+            width: 50%;
+            height: 60px;
+            font-size: 1.3rem;
+            font-family:  'Poppins', sans-serif;
+            border-radius: 15px;
+            background: linear-gradient(330deg,  #5b0eeb  0%, #6d5dfc  50%, #8abdff 100%);
+            color: white;
+           margin-top: 20px;
+            border-width: 1px 0px 1px 0px;
+}
+
+.buynow:active{
+             transform: scale(0.98);
+             background: #3b89f0;
+}
+
+hr{
+    opacity: 0.4;
+}
+
+.head{
+            font-size: 2.8vw;
+            font-weight: 600;
+            margin-top: 50px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+
+.descript{
+
+            font-size: 1.1vw;
+            text-align: center;
+            margin:20px 15px 20px 15px;
+            font-family: 'Poppins', sans-serif;
+         
+            
+}
+
+.downloads{
+             
+            font-size: 1.4vw;
+            font-weight: 400;
+            text-align: center;
+            margin:50px 15px 20px 15px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            border: 1px solid rgb(228, 226, 226);
+}
+
+.numb{
+
+            font-size: 1.5vw;
+            font-weight: 500;
+            text-align: center;
+            margin:50px 15px 20px 15px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.numb>span{
+            font-size: 2.3vw;
+            font-weight: 600;
+            text-align: center;
+            margin:50px 15px 20px 15px;
+            font-family:'Poppins', sans-serif ;
+             background-color: rgba(31, 29, 29,0.1);
+        
+
+}
+
+.offer3>.downloads{
+            margin-top: 50px;
+           
+}
+.offer2>.downloads{
+            margin-top: 25.7px;
+}
+
+
+
+/* <=================================Subscription plans ends here====================> */
+
+
+/* <===========================footer===================================> */
+footer{
+            width: 100%;        
+            height: 600px;
+            margin-top: 10%;
+            background-color:hsl(0,0%,22.4%);
+            clip-path:polygon(-51% 24%, 150% -1%, 150% -317%, 58% 453%);
+            display: flex;
+}
+.lala{
+            width: 900px;
+            height: 200px;
+            margin: 10% auto auto auto;
+            display: flex;
+            flex-direction: row;
+            gap: 5%;
+        
+}
+
+.lala>div{
+    width: 100px;
+    height: 100px;
+    box-shadow: 
+    0.1em 0.1em 0.1em  hsl(0,0%,12.2%),
+    0.2em 0.2em 0.3em   hsl(0,0%,12.2%),
+   -0.2em -0.2em 0.2em hsl(0,0%,27.5%);
+    border-radius: 50%;
+
+}
+ 
+.lala>div:hover{
+    transition: 0.4s ease-in-out;
+    transform: scale(1.1);
+   
+
+}
+
+.lala>div:active{
+    /* box-shadow:  2px 5px 15px #535353 , -2px -2px 3px    #212121; */
+    transition: 0.1s ease;
+    box-shadow: inset
+    0.1em 0.1em 0.1em hsl(0,0%,12.2%),
+    inset -0.1em -0.1em 0.1em hsl(0,0%,27.5%);
+}
+
+i{
+    color: white;
+    margin-left: 38%;
+    margin-top: 37%;
+    font-size: 27px;
+    
+}
+
+.lala>div:hover i{
+
+    background: linear-gradient(120deg,rgb(115, 85, 248),rgb(248, 177, 45));
+    background-clip: text;
+    -webkit-background-clip: text;
+     color: transparent;
+     transition: 0.15s ease-in-out;
+     transform: scale(1.38);
+     filter: drop-shadow(1px 1px 2px rgba(252, 149, 54, 0.3));
+    
+}
+
+
+    
+
+
+
+
+/* <===========================footer===================================> */
+
+
+
+
+
+/* <==============================================================> */
+/* <===========================gallery===================================>
+*/
+.gallery{
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) ;
+              margin-top: 40px;
+              grid-gap: 15px;
+  }
+  .item{
+              width: 100%;
+              height: 300px;
+              position: relative;
+              overflow: hidden;
+              border-radius:8px;
+              transition: .3s ease box-shadow;
+  }
+  
+  .item:hover{
+  box-shadow: 0px 0px 20px 3px #00000042;
+  }
+  .item:nth-last-child(1){
+    margin-bottom: 0;
+  }
+  .item h3{
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    background-color: #00000040;
+    color: aliceblue;
+    bottom: -70px;
+    font-weight: 300;
+    transition: .5s ease-in-out bottom;
+  }
+  .item:hover h3{
+    bottom: 0;
+  }
+ 

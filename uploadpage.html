@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Poppins&display=swap');
+
+
+
+     body{
+                        background-color: #f2f3f7; 
+     }
+     header{
+                  /* background-image: linear-gradient(120deg,rgb(59, 60, 126),white,rgb(13, 225, 253)); */
+                        background-color: white;
+                        border-radius:5px;
+                        width: 100%;
+                        background: #f9f9fa;
+                            box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1), -6px -6px 10px white;
+                        /* box-shadow: 0 0 2px 2px rgb(238, 237, 237); */
+                        height: 7em;
+                        
+                        color: rgb(97, 95, 95);
+                        /* border: 1px solid black; */
+}
+.logo{
+            /* border: 1px solid red; */
+                        width: 20%;
+                        height:150px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-self: flex-start;
+                        filter: drop-shadow(0.20rem 0.20rem 0.10rem rgba(71, 71, 71, 0.3));
+
+
+}
+.logo>p{
+        /* border: 1px solid red; */
+                       
+                      
+                       
+                        color: black;
+                        font-weight: 600;
+                        font-size: 4vw;
+                        line-height:8px;
+                        font-family: 'Comfortaa', cursive;;
+                        
+        
+}
+.logo>p>span{
+                        font-weight: 200;
+                        font-size: 3.2vw;
+                        
+}
+
+
+.logo>img{
+                        width: 100%;
+                        height: 100%;
+}
+
+
+.menu>ul{
+                        display: flex;
+                        flex-direction:row;
+                        gap: 2em;
+                        margin-left: 70%;
+                        font-family:'Poppins', sans-serif;
+                        margin-top:-100px;
+                        color: rgb(68, 66, 66);
+                        font-size: 1.5rem;
+} 
+
+
+/* <=====================================================header===========================================>          */
+
+
+.form_wrapper{
+                        width:45%;
+                        height: 400px;
+                        padding-top: 40px;
+                        margin: 10% auto 0px auto;
+                        text-align: center;
+                        border-radius: 15px;
+                        box-shadow: 0 0 transparent, 0 0 transparent, inset 3px 3px 5px rgba(0, 0, 0, 0.1), inset -3px -3px 5px white;
+
+                    
+}
+
+.svg{
+    margin: auto;
+    width: 70%;
+    height: 300px;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1), -6px -6px 10px white;
+    cursor: pointer;
+}
+
+.btnup{
+
+    width: 50%;
+    margin-top: 15%;
+    height: 60px;
+    font-size: 1.4rem;
+    margin-bottom: 5%;
+    border: 3px solid rgb(255, 166, 0);
+    background-color: #f2f3f7;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.btnup:hover{
+     background: linear-gradient(218deg, rgb(255, 166, 0),rgb(235, 125, 23));
+     color: white;
+}
+.btnup:active{
+     transform: scale(0.98);
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+    <header>
+        <div class="logo"><img src="./pics/logoart.svg" alt="" >
+            <p>arT<span>lore</span></p>
+        </div>
+
+        <div class="menu">
+            <ul style="list-style: none;">
+                <li>Home</li>
+                <li>Explore</li>
+                <li>join</li>
+                <li>Upload</li>
+            </ul>
+        </div>
+</header>
+
+
+<main>
+ 
+       <div class="form_wrapper">
+           <form action=""  >
+              <input type="file" value="" class="inphere" onchange="showPreview(event);" hidden>
+              <div class="svg">
+                  <img src="pics/upload.svg" id="output" alt="" width="100%" height="100%">
+              </div>
+              
+
+           </form>
+           <button class="btnup" onchange="showPreview(event);" >Upload</button>
+       </div>
+
+
+
+</main>
+
+<script>
+    const form=document.querySelector("form");
+    fileinput=form.querySelector(".inphere");
+    form.addEventListener("click",()=>{
+        fileinput.click();
+
+    });
+
+    const btn=document.querySelector(".btnup");
+    btn.addEventListener("click",()=>{
+        fileinput.click();
+
+    });
+   
+
+    function showPreview(event){
+  if(event.target.files.length > 0){
+    var src = URL.createObjectURL(event.target.files[0]);
+    console.log(src);
+    var preview = document.getElementById("output");
+    preview.src = src;
+    
+  }
+}
+
+</script>
+
+
+    
+</body>
+</html>
