@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=  <div class="gfg-div">
+        <title>Document</title>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Poppins&display=swap');
+
+            body{
+                    background-color: #f2f3f7; 
+            }
+
+
+   /* <=========================header================================================>          */
+            header{
+                      /* background-image: linear-gradient(120deg,rgb(59, 60, 126),white,rgb(13, 225, 253)); */
+                            background-color: white;
+                            border-radius:5px;
+                            width: 100%;
+                            background: #f9f9fa;
+                                box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1), -6px -6px 10px white;
+                            /* box-shadow: 0 0 2px 2px rgb(238, 237, 237); */
+                            height: 7em;
+                            
+                            color: rgb(97, 95, 95);
+                            /* border: 1px solid black; */
+}
+.logo{
+                /* border: 1px solid red; */
+                            width: 20%;
+                            height:150px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-self: flex-start;
+                            filter: drop-shadow(0.20rem 0.20rem 0.10rem rgba(71, 71, 71, 0.3));
+
+
+}
+.logo>p{
+            /* border: 1px solid red; */
+                           
+                          
+                           
+                            color: black;
+                            font-weight: 600;
+                            font-size: 4vw;
+                            line-height:8px;
+                            font-family: 'Comfortaa', cursive;;
+                            
+            
+}
+.logo>p>span{
+                            font-weight: 200;
+                            font-size: 3.2vw;
+                            
+}
+
+
+.logo>img{
+                            width: 100%;
+                            height: 100%;
+}
+
+
+.menu>ul{
+                            display: flex;
+                            flex-direction:row;
+                            gap: 2em;
+                            margin-left: 70%;
+                            font-family:'Poppins', sans-serif;
+                            margin-top:-100px;
+                            color: rgb(68, 66, 66);
+                            font-size: 1.5rem;
+} 
+
+
+/* <=========================header================================================>          */
+
+/* <=================================form block===============================> */
+
+.paper{
+                            width: 600px;
+                            height: 700px;
+                            border-radius: 20px;
+                            background: #f2f3f7;
+                            box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1), -6px -6px 10px white;
+                            margin: auto auto 5% auto;
+
+                        }
+                    
+          
+            
+
+ form{
+                            display: grid;
+                            grid-template-columns: 2fr 2fr;
+                             grid-gap: 15px;
+                             
+                            padding:12% 40px 0px 40px;
+                            
+
+                        
+         }
+
+ input{
+                            height: 65px;
+                         
+                           
+                           
+                            margin-top: 2%;
+                            outline: none !important;
+                            border: none;
+                            border-radius: 10px;
+                            box-shadow: 0 0 transparent, 0 0 transparent, inset 3px 3px 5px rgba(0, 0, 0, 0.1), inset -3px -3px 5px white;
+                            
+                            background: #f8f9fb;
+         }
+
+
+
+input[type="email"]{
+                            grid-column:1/-1;
+   
+ }
+
+input:focus{
+                            box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1), -6px -6px 10px white; 
+         }
+
+input::placeholder{
+                            text-align: center;
+                            font-size: 1.0rem;
+                            color: #9b9b9b;
+         }
+
+button{
+                            width: 80%;
+                            height: 60px;
+                            border:1px 0px 0.5px 1px ;
+                            border-radius: 10px;
+                            outline: none !important;
+                            margin-top: 15%;
+                            margin-left:calc(60% - 10px);
+                            font-size: 1.2rem;
+                            color: white;
+                            font-family: 'Poppins', sans-serif; 
+                            background: linear-gradient(330deg,  #5b0eeb  0%, #6d5dfc  50%, #8abdff 100%);
+
+         }
+
+ .sin{
+                            width: 200px;
+                            border: 1px solid red;
+                            margin: auto;
+                            z-index: 1;
+                            position: relative;
+                            top: 66px;
+                            clip-path: circle(80px);
+                        
+         }
+
+.sin>img{
+                            width: 100%;
+                            height: 100%;
+                            filter: drop-shadow(0.30rem 0.20rem 0.10rem rgba(71, 71, 71, 0.3));
+         }
+
+hr{
+                            margin-top: 40px;
+                            opacity: 0.4;
+    }
+
+.paper>p{
+                            text-align: center;
+                            font-size: 1.2rem;
+                            margin-top: 50px;
+                            font-family: 'Poppins', sans-serif ;
+         }
+
+
+a:link {
+       color: rgb(94, 17, 182);
+}
+
+/* visited link */
+a:visited {
+       color: green;
+}
+
+/* mouse over link */
+a:hover {
+       color: rgb(245, 26, 26);
+}
+
+/* selected link */
+a:active {
+       color: blue;
+}
+
+/* <=================================form block ends===============================> */
+
+
+        
+        </style>
+
+        
+</head>
+<body>
+    <header>
+            <div class="logo">
+                  <img src="./pics/logoart.svg" alt="" >
+                  <p>arT<span>lore</span></p>
+            </div>
+
+           <div class="menu">
+                    <ul style="list-style: none;">
+                            <li>Home</li>
+                            <li>Explore</li>
+                            <li>join</li>
+                            <li>Upload</li>
+                    </ul>
+          </div>
+    </header>
+
+    <main>
+        <div class="sin">
+                    <img src="./pics/signupsvg.svg" alt="" class="sign">
+        </div>
+        <div class="paper">
+                   
+                    <form action="">
+                        <input type="text" placeholder="First name" id="firstN" required>
+                        <input type="text" placeholder="Last name" id="lastN"  required>
+                        <input type="text" placeholder="Enter Username">
+                        <input type="tel" placeholder="mobile number">
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Enter password" required>
+                        <input type="password" placeholder="confirm password" required>
+                        <button class="login">Signup</button>
+
+                    </form>
+
+            <hr>
+                        <p class="allog"> Already a member ? <a href="login.html"> <i>Login</i></a> </p>
+                    
+        </div>
+        
+     
+    </main>
+      
+    
+    
+</body>
+</html>
